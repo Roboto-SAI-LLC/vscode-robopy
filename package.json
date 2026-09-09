@@ -1,0 +1,61 @@
+{
+  "name": "robopy",
+  "displayName": "RoboPy",
+  "description": "RoboPy language support — Roboto speaking this dialect. Syntax, hovers that teach each word, snippets. Origin: class Roberto; roboto = Roberto().",
+  "version": "0.1.0",
+  "publisher": "robotosai",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "RoboPy",
+    "roboto",
+    "roberto",
+    "robopy"
+  ],
+  "activationEvents": [
+    "onLanguage:robopy"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "robopy",
+        "aliases": [
+          "RoboPy",
+          "Roboto"
+        ],
+        "extensions": [
+          ".rp",
+          ".robopy",
+          ".rpy"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "media/icon.svg",
+          "dark": "media/icon.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "robopy",
+        "scopeName": "source.robopy",
+        "path": "./syntaxes/robopy.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "robopy",
+        "path": "./snippets/main.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Roboto-SAI-LLC/vscode-robopy"
+  }
+}

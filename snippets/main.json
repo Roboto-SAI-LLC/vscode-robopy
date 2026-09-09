@@ -1,0 +1,27 @@
+{
+  "function": {
+    "prefix": "def",
+    "description": "Function",
+    "body": ["def ${1:name}(${2:args}):", "  $0"]
+  },
+  "if": {
+    "prefix": "if",
+    "description": "If / else",
+    "body": ["if ${1:test}:", "  $2", "else:", "  $0"]
+  },
+  "while": {
+    "prefix": "while",
+    "description": "While loop",
+    "body": ["while ${1:test}:", "  $0"]
+  },
+  "print": {
+    "prefix": "print",
+    "description": "Print",
+    "body": ["print $0"]
+  },
+  "return": {
+    "prefix": "return",
+    "description": "Return",
+    "body": ["return $0"]
+  }
+}

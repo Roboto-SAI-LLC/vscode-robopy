@@ -1,0 +1,30 @@
+{
+  "name": "RoboPy",
+  "keywords": {
+    "if": "if",
+    "else": "else",
+    "elif": "elif",
+    "while": "while",
+    "for": "for",
+    "in": "in",
+    "function": "def",
+    "return": "return",
+    "var": "",
+    "true": "True",
+    "false": "False",
+    "null": "None",
+    "and": "and",
+    "or": "or",
+    "not": "not",
+    "print": "print",
+    "end": "end"
+  },
+  "operators": { "assign": "=", "eq": "==", "neq": "!=" },
+  "syntax": {
+    "blocks": "indent",
+    "commentLine": "#",
+    "headerColon": true,
+    "strings": "both",
+    "implicitDecl": true
+  }
+}

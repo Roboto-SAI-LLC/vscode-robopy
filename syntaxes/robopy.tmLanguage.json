@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "RoboPy",
+  "scopeName": "source.robopy",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#keywords" },
+    { "include": "#numbers" },
+    { "include": "#operators" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [{ "name": "comment.line", "match": "#.*$" }]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [{ "name": "constant.character.escape", "match": "\\\\." }]
+        },
+        {
+          "name": "string.quoted.single",
+          "begin": "'",
+          "end": "'",
+          "patterns": [{ "name": "constant.character.escape", "match": "\\\\." }]
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control",
+          "match": "\\b(def|if|elif|else|while|for|in|return|print|True|False|None|and|or|not|end)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [{ "name": "constant.numeric", "match": "\\b\\d+(?:\\.\\d+)?\\b" }]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator",
+          "match": "(=|==|!=|<=|>=|<|>|\\+|-|\\*|/|%)"
+        }
+      ]
+    }
+  }
+}
