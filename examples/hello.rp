@@ -1,0 +1,11 @@
+# Roboto equals Roberto — type is the maker, value is the being.
+def factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+n = 1
+while n <= 6:
+    print factorial(n)
+    n = n + 1

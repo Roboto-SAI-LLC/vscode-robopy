@@ -1,0 +1,9 @@
+RoboPy:
+  type: programming
+  color: "#c5ced8"
+  extensions:
+    - ".rp"
+    - ".robopy"
+    - ".rpy"
+  tm_scope: source.robopy
+  ace_mode: python
